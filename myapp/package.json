@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "webpack",
+    "build": "webpack",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint",
+    "server": "webpack-dev-server --content-base build --inline --hot"
+  },
+  "engines": {
+    "install-node": "6.9.2"
+  },
+  "dependencies": {
+    "antd": "^2.9.1", //npm 导入
+    "axios": "^0.16.1", //npm 导入
+    "babel-plugin-import": "^1.1.1",  //npm 导入
+    "babel-runtime": "^6.9.2",
+    "dva": "^1.2.1",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.23.0",
+    "css-loader": "^0.23.1", //npm 导入
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "expect": "^1.20.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "husky": "^0.12.0",
+    "less-loader": "^4.0.3", //npm 导入
+    "redbox-react": "^1.3.2",
+    "roadhog": "^0.5.2",
+    "style-loader": "^0.13.2", //npm 导入
+    "webpack": "^2.4.1" //npm 导入
+  }
+}
+
+//命令:  npm install pluginName --save-dev
